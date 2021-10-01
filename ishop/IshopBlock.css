@@ -1,0 +1,59 @@
+.GoodsBlock {
+  border: double gray 3px;
+  width: 600px;
+  padding: 0px 0px 0px 0px;
+  background-color: #f0f0f0;
+}
+
+.GoodsBlock .Name {
+  font-weight: bold;
+  text-align: center;
+}
+
+.GoodsBlock .Goods {
+  padding-top: 10px;
+}
+
+.GoodsBlock .Goods .Good {
+  padding: 0px 0px 0px 0px;
+  border-top: solid gray 1px;
+  margin: 0px 0px 0px 0px;
+}
+.GoodsBlock .Goods .Good1 {
+  border-top: solid gray 1px;
+  margin: 0px 0px 0px 0px;
+  font-weight: bold;
+  padding: 0px 0px 0px 0px;
+  height: 30px;
+}
+
+.GoodsBlock .Goods .Good .Count {
+  float: right;
+  width: 100px;
+  text-align: center;
+  border-left: solid gray 1px;
+  padding: 0px 0px 0px 0px;
+  margin: 0px 0px 0px 0px;
+}
+
+.GoodsBlock .Goods .Good .Text {
+  padding: 0px 0px 0px 0px;
+  margin: 0px 0px 0px 0px;
+}
+.GoodsBlock .Goods .Good1 .Count1 {
+  float: right;
+  width: 100px;
+  padding: 5px 0px 0px 0px;
+  text-align: center;
+  border-left: solid gray 1px;
+  margin: 0px 0px 0px 0px;
+  height: 25px;
+}
+
+.GoodsBlock .Goods .Good1 .Text1 {
+  float: left;
+  width: 100px;
+  padding: 5px 0px 0px 0px;
+  margin: 0px 0px 0px 0px;
+  height: 25px;
+}

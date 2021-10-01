@@ -1,0 +1,34 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+  <meta charset="utf-8" />
+  <title>Интернет магазин</title>
+</head> 
+<body> 
+  <div id="container"></div> 
+      
+  <script src="https://unpkg.com/react@15/dist/react.js"></script> 
+  <script src="https://unpkg.com/react-dom@15/dist/react-dom.js"></script> 
+      
+  <script src="IshopBlock.js"></script>
+  <link rel="stylesheet" type="text/css" href="IshopBlock.css" />
+
+  <script>
+
+    var nameText='Магазин: cтроим сами';
+    var goodsArr=[ 
+      {text:'название',code:1,count:'количество',price:'цена',ul1:'url'}, 
+      {text:'молоток',code:2,count:2,price:'100руб',ul1:1}, 
+      {text:'кирпич',code:3,count:4,price:'140руб',ul1:3}, 
+      {text:'дрель',code:4,count:3,price:'120руб',ul1:2} 
+    ];
+
+    ReactDOM.render(
+      React.createElement(VotesBlock,{name:nameText,goods:goodsArr}), 
+      document.getElementById('container') 
+    );
+
+  </script>
+
+</body> 
+</html>
