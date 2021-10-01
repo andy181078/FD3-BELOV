@@ -23,6 +23,7 @@ var VotesBlock = React.createClass({
         var goodCode=        
           React.DOM.div({key:good.code,className:'Good'},
             React.DOM.span({className:'Text'},good.text),
+            //React.DOM.span({className:'Count'},good.ul1),
             React.DOM.span({className:'Count'},good.ul1),
             React.DOM.span({className:'Count'},good.price),
             React.DOM.span({className:'Count'},good.count),

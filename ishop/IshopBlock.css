@@ -29,7 +29,7 @@
 
 .GoodsBlock .Goods .Good .Count {
   float: right;
-  width: 100px;
+  width: 120px;
   text-align: center;
   border-left: solid gray 1px;
   padding: 0px 0px 0px 0px;
@@ -42,7 +42,7 @@
 }
 .GoodsBlock .Goods .Good1 .Count1 {
   float: right;
-  width: 100px;
+  width: 120px;
   padding: 5px 0px 0px 0px;
   text-align: center;
   border-left: solid gray 1px;
