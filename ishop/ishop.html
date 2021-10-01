@@ -18,13 +18,15 @@
     var nameText='Магазин: cтроим сами';
     var goodsArr=[ 
       {text:'название',code:1,count:'количество',price:'цена',ul1:'url'}, 
+    ]
+    var goodsArr1=[  
       {text:'молоток',code:2,count:2,price:'100руб',ul1:'img1/humer.jpg'}, 
       {text:'кирпич',code:3,count:4,price:'140руб',ul1:'img1/brick.jpg'}, 
       {text:'дрель',code:4,count:3,price:'120руб',ul1:'img1/dril.jpeg'} 
     ];
 
     ReactDOM.render(
-      React.createElement(VotesBlock,{name:nameText,goods:goodsArr}), 
+      React.createElement(VotesBlock,{name:nameText,goods:goodsArr,goods1:goodsArr1}), 
       document.getElementById('container') 
     );
 
