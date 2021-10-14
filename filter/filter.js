@@ -2,19 +2,19 @@ var FilterBlock = React.createClass({
 
   displayName: 'FilterBlock',
 
-  propTypes: {
-    workMode: React.PropTypes.number.isRequired,
-    question: React.PropTypes.string.isRequired,
-    answers:React.PropTypes.arrayOf(
-      React.PropTypes.shape({
-        code: React.PropTypes.number.isRequired,
-        count: React.PropTypes.number.isRequired,
-        text: React.PropTypes.string.isRequired,
-        freeanswer: React.PropTypes.bool,
-      })
-    ),
-    deffreeanswertext: React.PropTypes.string.isRequired,
-  },
+  //propTypes: {
+   // workMode: React.PropTypes.number.isRequired,
+    //question: React.PropTypes.string.isRequired,
+    //answers:React.PropTypes.arrayOf(
+     // React.PropTypes.shape({
+       // code: React.PropTypes.number.isRequired,
+       // count: React.PropTypes.number.isRequired,
+       // text: React.PropTypes.string.isRequired,
+       // freeanswer: React.PropTypes.bool,
+    //  })
+   // ),
+   // deffreeanswertext: React.PropTypes.string.isRequired,
+  //},
 
   getInitialState: function() {
     return { 
@@ -48,7 +48,7 @@ var FilterBlock = React.createClass({
     var res1=this.state.res;
   if (this.state.str!=='') {
     
-   res1=res1.filter( v=>v.text.indexOf(this.state.str!==-1) );
+   res1=res1.filter( v=>v.text.indexOf(this.state.str!==-1) )
    
     }
   
@@ -61,7 +61,7 @@ var FilterBlock = React.createClass({
       React.DOM.input( {type:'checkbox'}),
       React.DOM.input( {type:'text',defaultValue:this.state.str,onChange:this.freeAnswerTextChanged,onChange:this.freeAnswerTextChanged1(res1) } ),
       React.DOM.input( {type:'button',value:'Сброс'} ),
-      React.DOM.div( {className:'FilterBlocka'},this.state.res1 )
+      React.DOM.div( {className:'FilterBlocka'},this.state.res )
      
     
     );
