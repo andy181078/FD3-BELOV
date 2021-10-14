@@ -54,14 +54,14 @@ var FilterBlock = React.createClass({
   
       res1=res1.map( v=>
         React.DOM.div({ className: 'FilterBlockb' },v.text)
-                           
+                            
   ) 
    
     return React.DOM.div( {className:'FilterBlock'}, 
       React.DOM.input( {type:'checkbox'}),
       React.DOM.input( {type:'text',defaultValue:this.state.str,onChange:this.freeAnswerTextChanged,onChange:this.freeAnswerTextChanged1(res1) } ),
       React.DOM.input( {type:'button',value:'Сброс'} ),
-      React.DOM.div( {className:'FilterBlocka'},this.state.res )
+      React.DOM.div( {className:'FilterBlocka'},this.state.res1 )
      
     
     );
