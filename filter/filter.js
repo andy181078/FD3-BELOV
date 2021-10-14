@@ -53,10 +53,10 @@ var FilterBlock = React.createClass({
     }
   
       res1=res1.map( v=>
-        React.DOM.div({ className: 'FilterBlockb' },v.text),
-        freeAnswerTextChanged1(res1)                   
+        React.DOM.div({ className: 'FilterBlockb' },v.text)
+                           
   ) 
-   
+  freeAnswerTextChanged1(res1) 
     return React.DOM.div( {className:'FilterBlock'}, 
       React.DOM.input( {type:'checkbox'}),
       React.DOM.input( {type:'text',defaultValue:this.state.str,onChange:this.freeAnswerTextChanged,} ),
