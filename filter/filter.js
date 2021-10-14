@@ -19,6 +19,7 @@ var FilterBlock = React.createClass({
   getInitialState: function() {
     return { 
       str:'',
+      res:this.props.strings,
     };
   },
 
@@ -27,7 +28,10 @@ var FilterBlock = React.createClass({
     console.log (this.state.str);
   },
 
+  freeAnswerTextChanged1: function(fff) { 
+    this.setState( {res:fff} );
     
+  },  
  
 
  
@@ -41,30 +45,27 @@ var FilterBlock = React.createClass({
         
      // })
     //);
-    var res=this.props.strings;
+    var res1=this.state.res;
   if (this.state.str!=='') {
     
-   res=res.filter( v=>
-     (v.text.indexOf(this.state.str)!==-1)
-     React.DOM.div({ className: 'FilterBlockb' },v.text)
-                         
-) 
+   res1=res1.filter( v=>v.text.indexOf(this.state.str!==-1) );
+   
     }
-    else {
-      res=res.map( v=>
   
+      res1=res1.map( v=>
         React.DOM.div({ className: 'FilterBlockb' },v.text)
                            
   ) 
-    }
+   
     return React.DOM.div( {className:'FilterBlock'}, 
       React.DOM.input( {type:'checkbox'}),
-      React.DOM.input( {type:'text',defaultValue:this.state.str,onChange:this.freeAnswerTextChanged } ),
+      React.DOM.input( {type:'text',defaultValue:this.state.str,onChange:this.freeAnswerTextChanged,onChange:this.freeAnswerTextChanged1(res1) } ),
       React.DOM.input( {type:'button',value:'Сброс'} ),
-      React.DOM.div( {className:'FilterBlocka'},res )
+      React.DOM.div( {className:'FilterBlocka'},this.state.res1 )
      
-      
+    
     );
+      }
   },
 
-});
+);
