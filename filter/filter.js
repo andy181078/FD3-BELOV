@@ -44,11 +44,18 @@ var FilterBlock = React.createClass({
     var res=this.props.strings;
   if (this.state.str!=='') {
     
-    res=res.filter( v=>
-      (v.text.indexOf(this.state.str)!==-1)
-      React.DOM.div({ className: 'FilterBlockb' },v.text)
+   res=res.filter( v=>
+     (v.text.indexOf(this.state.str)!==-1)
+     React.DOM.div({ className: 'FilterBlockb' },v.text)
                          
 ) 
+    }
+    else {
+      res=res.map( v=>
+  
+        React.DOM.div({ className: 'FilterBlockb' },v.text)
+                           
+  ) 
     }
     return React.DOM.div( {className:'FilterBlock'}, 
       React.DOM.input( {type:'checkbox'}),
